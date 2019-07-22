@@ -315,7 +315,7 @@ body{
 
     a{
         padding: 5px 32px;
-        font-size: 1em;
+        font-size: 2em;
         font-style: italic;
         text-decoration:none;
     }
@@ -341,7 +341,7 @@ body{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1em;
+        font-size: 2em;
         text-align: center;
     }
     .text_h2{
