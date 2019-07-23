@@ -36,48 +36,44 @@ body{
     width: 100%;
     height: 100%;
 }
+header{
+    width: 90%;
+    height: 7%;
+    margin: 0 auto;
+}
+/*div{
+    width: 90%;
+    min-height: 65%;
+    background-color: brown;
+    margin: 0 auto;
+}*/
+footer{
+    width: 90%;
+    height: 4%;
+    margin: 0 auto;
+}
+/****************************************************
+ *****  Estrutura das DIV's do corpo da pagina  *****
+ ****************************************************/
+#wrapper{
+    width: 90%;
+    min-height: 65%;
+    margin: 0 auto;
+}
+#conteudo{
+    min-height: 25%;
+}
 
 /********************************************
  ***** Monitor de computador e Notebook *****
  ********************************************/
 @media only screen and (min-width: 1281px){
-    /**************************************
-     ***** TAG de Estrutura da página *****
-     **************************************/
-    /*body{
-        width: 100%;
-        height: 100%;
-    }*/
-    header{
-        width: 90%;
-        height: 7%;
-        margin: 0 auto;
-    }
-    /*div{
-        width: 90%;
-        min-height: 65%;
-        background-color: brown;
-        margin: 0 auto;
-    }*/
-    footer{
-        width: 90%;
-        height: 4%;
-        margin: 0 auto;
-    }
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
-    #wrapper{
-        width: 90%;
-        min-height: 65%;
-        margin: 0 auto;
-    }
     #cabecalho{
         min-height: 130px;
         padding: 5px 32px;
-    }
-    #conteudo{
-        min-height: 25%;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
@@ -156,37 +152,12 @@ body{
  *****           Monitor Celular         *****
  ********************************************/
 @media only screen and (min-width:1025px) and (max-width:1280px){
-    /**************************************
-     ***** TAG de Estrutura da página *****
-     **************************************/
-    header{
-        width: 90%;
-        height: 7%;
-        background-color: floralwhite;
-        margin: 0 auto;
-    }
-    footer{
-        width: 90%;
-        height: 4%;
-        background-color: aqua;
-        margin: 0 auto;
-    }
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
-    #wrapper{
-        width: 90%;
-        min-height: 65%;
-        margin: 0 auto;
-    }
     #cabecalho{
         min-height: 95px;
-        background-color: yellow;
         padding: 5px 32px;
-    }
-    #conteudo{
-        min-height: 25%;
-        background-color: brown;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
@@ -265,33 +236,12 @@ body{
  *****           Monitor Tablet         *****
  ********************************************/
 @media only screen and (max-width:1024px){
-    /**************************************
-     ***** TAG de Estrutura da página *****
-     **************************************/
-    header{
-        width: 90%;
-        height: 7%;
-        margin: 0 auto;
-    }
-    footer{
-        width: 90%;
-        height: 4%;
-        margin: 0 auto;
-    }
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
-    #wrapper{
-        width: 90%;
-        min-height: 65%;
-        margin: 0 auto;
-    }
     #cabecalho{
         min-height: 95px;
         padding: 5px 32px;
-    }
-    #conteudo{
-        min-height: 25%;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
@@ -311,7 +261,7 @@ body{
 
     a{
         padding: 5px 32px;
-        font-size: 2em;
+        font-size: 1.5em;
         font-style: italic;
         text-decoration:none;
     }
@@ -357,6 +307,154 @@ body{
         font-family: "Times New Roman";
         font-style: italic;
         font-size: 1em;
+    }
+    .text_li{
+        margin-left: 128px;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****             Impressora           *****
+ ********************************************/
+@media only print
+{
+    #wrapper{
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+    }
+    #cabecalho{
+        margin-top: 3mm;
+        margin-bottom: 1mm;
+        min-height: 5mm;
+    }
+    #conteudo{
+        margin-bottom: 2mm;
+        margin-left: 3mm;
+        margin-right: 3mm;
+        min-height: 200mm;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    p{
+        font-size: 1em;
+        margin-left: 8mm;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.6em;
+        margin-top: 3mm;
+        margin-bottom: 1mm;
+    }
+    h2{
+        font-size: 1.4em;
+        margin-left: 3mm;
+        margin-right: 2mm;
+    }
+    h3{
+        font-size: 1.2em;
+        margin-left: 8mm;
+    }
+    li{
+        font-size: 1em;
+        margin-left: 16mm;
+    }
+    img, a{
+        display: none;
+    }
+    /************************
+     *****    Classe    *****
+     ************************/
+    .text_h1{
+        display: none;
+    }
+    .text_li{
+        margin-left: 23mm;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ ***** Monitor de computador e Notebook *****
+ ********************************************/
+@media only screen and (min-width: 736px) and (max-width: 960px{
+    /****************************************************
+     *****  Estrutura das DIV's do corpo da pagina  *****
+     ****************************************************/
+    #cabecalho{
+        min-height: 130px;
+        padding: 5px 32px;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    p{
+        padding: 1px;
+        font-size: 1.2em;
+        margin-left: 64px;
+        text-justify: auto;
+    }
+    li{
+        padding: 1px;
+        font-size: 1.2em;
+        margin-left: 96px;
+        text-justify: auto;
+    }
+
+    a{
+        padding: 5px 32px;
+        font-size: 1.5em;
+        font-style: italic;
+        text-decoration:none;
+    }
+    a:link{
+        color:darkblue;
+    }
+    a:visited{
+        color:darkgreen;
+    }
+    a:hover{
+        color:darkgrey;
+        text-decoration:underline;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        width: 15%;
+        height: 5%;
+    }
+    /************************
+     *****    Classe    *****
+     ************************/
+    .text_h1{
+        padding: 5px auto;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .text_h2{
+        clear: both;
+        padding: 1px;
+        font-size: 1.2em;
+        margin-left: 32px;
+    }
+    .text_h3{
+        padding: 1px;
+        font-size: 1.2em;
+        margin-left: 64px;
+    }
+    .esquerda{
+        float: left;
+        padding: 0 180px 0 0;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 2em;
     }
     .text_li{
         margin-left: 128px;
