@@ -526,49 +526,54 @@ a:hover{
  *****             Impressora           *****
  ********************************************/
 @media only print{
+    /**************************************
+     ***** TAG de Estrutura da página *****
+     **************************************/
+    body{
+        margin: 0;
+    }
+    header{
+        height: 0;
+        border: none;
+    }
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
     #wrapper{
         width: 210mm;
         height: 297mm;
-        margin: 0;
     }
     #cabecalho{
-        margin-top: 3mm;
-        margin-bottom: 1mm;
+        margin-bottom: 2mm;
         min-height: 5mm;
     }
     #conteudo{
-        margin-bottom: 2mm;
-        margin-left: 3mm;
-        margin-right: 3mm;
-        min-height: 200mm;
+        min-height: 180mm;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
      **************************************/
     p{
-        font-size: 1em;
+        font-size: 0.8em;
         margin-left: 8mm;
     }
     h1{
         text-align: center;
-        font-size: 1.6em;
+        font-size: 1em;
         margin-top: 3mm;
         margin-bottom: 1mm;
     }
     h2{
-        font-size: 1.4em;
+        font-size: 1em;
         margin-left: 3mm;
         margin-right: 2mm;
     }
     h3{
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 8mm;
     }
     li{
-        font-size: 1em;
+        font-size: 0.8em;
         margin-left: 16mm;
     }
     img, a{
