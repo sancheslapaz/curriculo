@@ -40,6 +40,10 @@ header{
     width: 90%;
     height: 7%;
     margin: 0 auto;
+    padding: 1px;
+    border: 1px solid;
+    border-color: darkblue;
+    border-radius: 20px;
 }
 /*div{
     width: 90%;
@@ -63,6 +67,19 @@ footer{
 #conteudo{
     min-height: 25%;
 }
+/**************************************
+ ***** TAG de Estrutura de texto  *****
+ **************************************/
+a:link{
+    color:darkblue;
+}
+a:visited{
+    color:darkgreen;
+}
+a:hover{
+    color:darkgrey;
+    text-decoration:underline;
+}
 
 /********************************************
  ***** Monitor de computador e Notebook *****
@@ -74,38 +91,31 @@ footer{
     #cabecalho{
         min-height: 130px;
         padding: 5px 32px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 1em;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
      **************************************/
     p{
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 0.9em;
         margin-left: 64px;
         text-justify: auto;
     }
     li{
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 0.9em;
         margin-left: 96px;
         text-justify: auto;
     }
 
     a{
         padding: 5px 32px;
-        font-size: 1.5em;
+        font-size: 1em;
         font-style: italic;
         text-decoration:none;
-    }
-    a:link{
-        color:darkblue;
-    }
-    a:visited{
-        color:darkgreen;
-    }
-    a:hover{
-        color:darkgrey;
-        text-decoration:underline;
     }
     /**************************************
      ***** TAG de Estrutura de imagem *****
@@ -119,26 +129,23 @@ footer{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1.5em;
+        font-size: 1em;
         text-align: center;
     }
     .text_h2{
         clear: both;
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 32px;
     }
     .text_h3{
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 64px;
     }
     .esquerda{
         float: left;
-        padding: 0 180px 0 0;
-        font-family: "Times New Roman";
-        font-style: italic;
-        font-size: 2em;
+        padding: 0 280px 0 0;
     }
     .text_li{
         margin-left: 128px;
@@ -156,73 +163,63 @@ footer{
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
     #cabecalho{
-        min-height: 95px;
+        min-height: 120px;
         padding: 5px 32px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 1em;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
      **************************************/
     p{
         padding: 1px;
-        font-size: 1em;
+        font-size: 0.9em;
         margin-left: 64px;
         text-justify: auto;
     }
     li{
         padding: 1px;
-        font-size: 1em;
+        font-size: 0.9em;
         margin-left: 96px;
         text-justify: auto;
     }
 
     a{
         padding: 5px 32px;
-        font-size: 1.2em;
+        font-size: 1em;
         font-style: italic;
         text-decoration:none;
-    }
-    a:link{
-        color:darkblue;
-    }
-    a:visited{
-        color:darkgreen;
-    }
-    a:hover{
-        color:darkgrey;
-        text-decoration:underline;
     }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
     img{
-        width: 15%;
-        height: 5%;
+        width: 17%;
+        height: 7%;
     }
     /************************
      *****    Classe    *****
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: center;
     }
     .text_h2{
         clear: both;
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 32px;
     }
     .text_h3{
         padding: 1px;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 64px;
     }
     .esquerda{
         float: left;
-        padding: 0 110px 0 0;
-        font-family: "Times New Roman";
-        font-style: italic;
-        font-size: 1.5em;
+        padding: 0 170px 0 0;
     }
     .text_li{
         margin-left: 128px;
@@ -235,13 +232,16 @@ footer{
 /********************************************
  *****           Monitor Tablet         *****
  ********************************************/
-@media only screen and (max-width:1024px){
+@media only screen and (min-width: 961px) and (max-width:1024px){
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
      ****************************************************/
     #cabecalho{
         min-height: 95px;
         padding: 5px 32px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 0.9em;
     }
     /**************************************
      ***** TAG de Estrutura de texto  *****
@@ -258,22 +258,11 @@ footer{
         margin-left: 96px;
         text-justify: auto;
     }
-
     a{
         padding: 5px 32px;
-        font-size: 1.5em;
+        font-size: 1em;
         font-style: italic;
         text-decoration:none;
-    }
-    a:link{
-        color:darkblue;
-    }
-    a:visited{
-        color:darkgreen;
-    }
-    a:hover{
-        color:darkgrey;
-        text-decoration:underline;
     }
     /**************************************
      ***** TAG de Estrutura de imagem *****
@@ -287,7 +276,153 @@ footer{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 2em;
+        font-size: 1em;
+        text-align: center;
+    }
+    .text_h2{
+        clear: both;
+        padding: 1px;
+        font-size: 1em;
+        margin-left: 32px;
+    }
+    .text_h3{
+        padding: 1px;
+        font-size: 1em;
+        margin-left: 64px;
+    }
+    .esquerda{
+        float: left;
+        padding: 0 160px 0 0;
+    }
+    .text_li{
+        margin-left: 128px;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ ***** Monitor de computador e Notebook *****
+ ********************************************/
+@media only screen and (min-width: 736px) and (max-width: 960px){
+    /****************************************************
+     *****  Estrutura das DIV's do corpo da pagina  *****
+     ****************************************************/
+    #cabecalho{
+        min-height: 120px;
+        padding: 5px 32px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 0.9em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    p{
+        padding: 1px;
+        font-size: 0.8em;
+        margin-left: 64px;
+        text-justify: auto;
+    }
+    li{
+        padding: 1px;
+        font-size: 0.8em;
+        margin-left: 96px;
+        text-justify: auto;
+    }
+    a{
+        padding: 5px 32px;
+        font-size: 1em;
+        font-style: italic;
+        text-decoration:none;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        width: 20%;
+        height: 10%;
+    }
+    /************************
+     *****    Classe    *****
+     ************************/
+    .text_h1{
+        padding: 5px auto;
+        font-size: 1em;
+        text-align: center;
+    }
+    .text_h2{
+        clear: both;
+        padding: 1px;
+        font-size: 1em;
+        margin-left: 32px;
+    }
+    .text_h3{
+        padding: 1px;
+        font-size: 1em;
+        margin-left: 64px;
+    }
+    .esquerda{
+        float: left;
+        padding: 0 130px 0 0;
+    }
+    .text_li{
+        margin-left: 128px;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****          Monitor Celular         *****
+ ********************************************/
+@media only screen and (min-width: 720px) and (max-width: 735px){
+    /****************************************************
+     *****  Estrutura das DIV's do corpo da pagina  *****
+     ****************************************************/
+    #cabecalho{
+        min-height: 110px;
+        padding: 5px 32px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 0.8em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    p{
+        padding: 1px;
+        font-size: 0.7em;
+        margin-left: 64px;
+        text-justify: auto;
+    }
+    li{
+        padding: 1px;
+        font-size: 0.7em;
+        margin-left: 96px;
+        text-justify: auto;
+    }
+    a{
+        padding: 5px 32px;
+        font-size: 0.9em;
+        font-style: italic;
+        text-decoration:none;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        width: 25%;
+        height: 10%;
+    }
+    /************************
+     *****    Classe    *****
+     ************************/
+    .text_h1{
+        padding: 5px auto;
+        font-size: 0.9em;
         text-align: center;
     }
     .text_h2{
@@ -303,10 +438,81 @@ footer{
     }
     .esquerda{
         float: left;
-        padding: 0 110px 0 0;
+        padding: 0 60px 0 0;
+    }
+    .text_li{
+        margin-left: 128px;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ ***** Monitor de computador e Notebook *****
+ ********************************************/
+@media only screen and (max-width: 719px){
+    /****************************************************
+     *****  Estrutura das DIV's do corpo da pagina  *****
+     ****************************************************/
+    #cabecalho{
+        min-height: 90px;
+        padding: 5px 32px;
         font-family: "Times New Roman";
         font-style: italic;
-        font-size: 1em;
+        font-size: 0.7em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    p{
+        padding: 1px;
+        font-size: 0.7em;
+        margin-left: 64px;
+        text-justify: auto;
+    }
+    li{
+        padding: 1px;
+        font-size: 0.7em;
+        margin-left: 96px;
+        text-justify: auto;
+    }
+
+    a{
+        padding: 5px 32px;
+        font-size: 0.9em;
+        font-style: italic;
+        text-decoration:none;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        width: 25%;
+        height: 20%;
+    }
+    /************************
+     *****    Classe    *****
+     ************************/
+    .text_h1{
+        padding: 5px auto;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .text_h2{
+        clear: both;
+        padding: 1px;
+        font-size: 0.9em;
+        margin-left: 32px;
+    }
+    .text_h3{
+        padding: 1px;
+        font-size: 0.9em;
+        margin-left: 64px;
+    }
+    .esquerda{
+        float: left;
+        padding: 0 45px 0 0;
     }
     .text_li{
         margin-left: 128px;
@@ -319,8 +525,10 @@ footer{
 /********************************************
  *****             Impressora           *****
  ********************************************/
-@media only print
-{
+@media only print{
+    /****************************************************
+     *****  Estrutura das DIV's do corpo da pagina  *****
+     ****************************************************/
     #wrapper{
         width: 210mm;
         height: 297mm;
@@ -380,86 +588,3 @@ footer{
  *****              Fim                 *****
  ********************************************/
 
-/********************************************
- ***** Monitor de computador e Notebook *****
- ********************************************/
-@media only screen and (min-width: 736px) and (max-width: 960px{
-    /****************************************************
-     *****  Estrutura das DIV's do corpo da pagina  *****
-     ****************************************************/
-    #cabecalho{
-        min-height: 130px;
-        padding: 5px 32px;
-    }
-    /**************************************
-     ***** TAG de Estrutura de texto  *****
-     **************************************/
-    p{
-        padding: 1px;
-        font-size: 1.2em;
-        margin-left: 64px;
-        text-justify: auto;
-    }
-    li{
-        padding: 1px;
-        font-size: 1.2em;
-        margin-left: 96px;
-        text-justify: auto;
-    }
-
-    a{
-        padding: 5px 32px;
-        font-size: 1.5em;
-        font-style: italic;
-        text-decoration:none;
-    }
-    a:link{
-        color:darkblue;
-    }
-    a:visited{
-        color:darkgreen;
-    }
-    a:hover{
-        color:darkgrey;
-        text-decoration:underline;
-    }
-    /**************************************
-     ***** TAG de Estrutura de imagem *****
-     **************************************/
-    img{
-        width: 15%;
-        height: 5%;
-    }
-    /************************
-     *****    Classe    *****
-     ************************/
-    .text_h1{
-        padding: 5px auto;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .text_h2{
-        clear: both;
-        padding: 1px;
-        font-size: 1.2em;
-        margin-left: 32px;
-    }
-    .text_h3{
-        padding: 1px;
-        font-size: 1.2em;
-        margin-left: 64px;
-    }
-    .esquerda{
-        float: left;
-        padding: 0 180px 0 0;
-        font-family: "Times New Roman";
-        font-style: italic;
-        font-size: 2em;
-    }
-    .text_li{
-        margin-left: 128px;
-    }
-}
-/********************************************
- *****              Fim                 *****
- ********************************************/
