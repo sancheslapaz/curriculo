@@ -70,6 +70,13 @@ footer{
 /**************************************
  ***** TAG de Estrutura de texto  *****
  **************************************/
+a{
+    padding: 5px 32px;
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration:none;
+    text-shadow: 0.09em 0.09em 0.09em #1289FF;
+}
 a:link{
     color:darkblue;
 }
@@ -83,7 +90,8 @@ a:hover{
 
 /********************************************
  ***** Monitor de computador e Notebook *****
- ********************************************/
+ *****            Horizontal            *****
+*********************************************/
 @media only screen and (min-width: 1281px){
     /****************************************************
      *****  Estrutura das DIV's do corpo da pagina  *****
@@ -110,13 +118,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-
-    a{
-        padding: 5px 32px;
-        font-size: 1em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -129,7 +130,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
@@ -156,7 +157,8 @@ a:hover{
  ********************************************/
 
 /********************************************
- *****           Monitor Celular         *****
+ *****           Monitor Celular        *****
+ *****            Horizontal            *****
  ********************************************/
 @media only screen and (min-width:1025px) and (max-width:1280px){
     /****************************************************
@@ -184,13 +186,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-
-    a{
-        padding: 5px 32px;
-        font-size: 1em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -203,7 +198,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
@@ -231,6 +226,7 @@ a:hover{
 
 /********************************************
  *****           Monitor Tablet         *****
+ *****            Horizontal            *****
  ********************************************/
 @media only screen and (min-width: 961px) and (max-width:1024px){
     /****************************************************
@@ -258,12 +254,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-    a{
-        padding: 5px 32px;
-        font-size: 1em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -276,7 +266,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
@@ -304,6 +294,7 @@ a:hover{
 
 /********************************************
  ***** Monitor de computador e Notebook *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (min-width: 736px) and (max-width: 960px){
     /****************************************************
@@ -331,12 +322,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-    a{
-        padding: 5px 32px;
-        font-size: 1em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -349,7 +334,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
@@ -377,6 +362,7 @@ a:hover{
 
 /********************************************
  *****          Monitor Celular         *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (min-width: 720px) and (max-width: 735px){
     /****************************************************
@@ -404,12 +390,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-    a{
-        padding: 5px 32px;
-        font-size: 0.9em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -422,7 +402,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 0.9em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
@@ -449,7 +429,8 @@ a:hover{
  ********************************************/
 
 /********************************************
- ***** Monitor de computador e Notebook *****
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (max-width: 719px){
     /****************************************************
@@ -477,13 +458,6 @@ a:hover{
         margin-left: 96px;
         text-justify: auto;
     }
-
-    a{
-        padding: 5px 32px;
-        font-size: 0.9em;
-        font-style: italic;
-        text-decoration:none;
-    }
     /**************************************
      ***** TAG de Estrutura de imagem *****
      **************************************/
@@ -496,7 +470,7 @@ a:hover{
      ************************/
     .text_h1{
         padding: 5px auto;
-        font-size: 0.9em;
+        font-size: 1.2em;
         text-align: center;
     }
     .text_h2{
